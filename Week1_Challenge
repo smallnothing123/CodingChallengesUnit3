@@ -1,0 +1,11 @@
+const input = require('readline-sync')
+
+function bob (){
+
+  let Base = input.question("What is thebase?  ");
+  let Height = input.question("What is the HEIGHT???????  ");
+  let Area = console.log("The area isthis::  " + (Base * Height) / 2)
+
+}
+
+bob()
