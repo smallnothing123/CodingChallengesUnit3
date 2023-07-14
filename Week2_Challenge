@@ -1,0 +1,18 @@
+const input = require('readline-sync');
+
+
+function FirstReverse(str) {
+  bob = str.split('')
+
+  bobby = bob.reverse()
+
+  str = bobby.join('')
+  // code goes here
+  return str;
+
+}
+
+let reversetheword = input.question("Put a word here ")
+
+// keep this function call here
+console.log(FirstReverse(reversetheword));
