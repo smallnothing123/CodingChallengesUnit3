@@ -1,0 +1,21 @@
+const input = require('readline-sync');
+
+let sentence = input.question("Enter a sentence: ");
+
+function LongestWord(sen) {
+
+ let words = sen.split(" ");
+
+  let ThelongestWord = "";
+  for (const word of words) {
+    if (word.length > ThelongestWord.length) {
+      ThelongestWord = word;
+    }
+  }
+  // code goes here
+  return ThelongestWord;
+
+}
+
+// keep this function call here
+console.log(LongestWord(sentence));
