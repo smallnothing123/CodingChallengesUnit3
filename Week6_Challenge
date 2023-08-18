@@ -1,0 +1,21 @@
+const input = require('readline-sync');
+
+function charCount(char, str) {
+
+  const lowerChar = char.toLowerCase();
+
+  const lowerStr = str.toLowerCase();
+
+  let count = 0;
+  for (let i = 0; i < lowerStr.length; i++) {
+    if (lowerStr[i] === lowerChar) {
+      count++;
+    }
+  }
+  return count;
+}
+
+bob = input.question("Pick a letter: ")
+billy = input.question("say a word: ")
+
+console.log(charCount(bob, billy));
